@@ -1,0 +1,14 @@
+&pinctrl {
+    i2c0_default: i2c0_default {
+        group0 {
+            pinmux = <I2C0_SCL_PTC8>, <I2C0_SDA_PTC9>;
+        };
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+};
