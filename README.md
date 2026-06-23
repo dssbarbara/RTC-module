@@ -1,4 +1,4 @@
 ﻿# RTC-module
 
-SCL -> PTC8
-SDA -> PTC9
+#SCL -> PTC8
+#SDA -> PTC9
